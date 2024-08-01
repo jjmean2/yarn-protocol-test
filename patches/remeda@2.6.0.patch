@@ -1,0 +1,23 @@
+diff --git a/dist/printjw.js b/dist/printjw.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..62296ba59f20ad1dc4891c29bbcd5b29c50009ca
+--- /dev/null
++++ b/dist/printjw.js
+@@ -0,0 +1,3 @@
++export function printjw(...value) {
++    console.log('jongwan:', ...value)
++}
+diff --git a/package.json b/package.json
+index cc6e2a23d869f54575b3e61f0b73e59fa4abe0e8..2cf9aada723971a1b506edd8364e242cbeb1d2c0 100644
+--- a/package.json
++++ b/package.json
+@@ -38,6 +38,9 @@
+     ".": {
+       "import": "./dist/index.js",
+       "require": "./dist/index.cjs"
++    },
++    "./printjw.js": {
++      "default": "./dist/printjw.js"
+     }
+   },
+   "main": "dist/index.cjs",
